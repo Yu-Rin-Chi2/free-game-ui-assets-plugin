@@ -10,7 +10,7 @@
   "mcpServers": {
     "game-ui-assets": {
       "type": "http",
-      "url": "https://game-ui-assets-mcp.yurinchi2525.workers.dev/mcp"
+      "url": "https://mcp.freegameui.net/mcp"
     }
   }
 }

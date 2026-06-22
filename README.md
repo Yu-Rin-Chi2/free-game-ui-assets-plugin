@@ -42,7 +42,7 @@ The skill triggers automatically and walks through search → candidates → sav
 From other MCP-capable clients (Cursor / Claude Desktop / ChatGPT, etc.), register this Remote MCP to get the same tools:
 
 ```
-https://game-ui-assets-mcp.yurinchi2525.workers.dev/mcp
+https://mcp.freegameui.net/mcp
 ```
 
 ## License
