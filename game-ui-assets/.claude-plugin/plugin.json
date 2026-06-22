@@ -1,0 +1,16 @@
+{
+  "name": "game-ui-assets",
+  "description": "Free Game UI Assets を AI から検索して SVG/PNG をプロジェクトへ直接保存。MCP サーバ同梱（インストールで自動登録）。全アセット CC0（商用可・帰属不要）",
+  "version": "1.0.0",
+  "author": {
+    "name": "Free Game UI Assets"
+  },
+  "repository": "https://github.com/Yu-Rin-Chi2/free-game-ui-assets-plugin",
+  "keywords": ["game", "ui", "svg", "icon", "button", "panel", "assets", "cc0", "gamedev"],
+  "mcpServers": {
+    "game-ui-assets": {
+      "type": "http",
+      "url": "https://game-ui-assets-mcp.yurinchi2525.workers.dev/mcp"
+    }
+  }
+}

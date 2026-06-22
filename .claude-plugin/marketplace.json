@@ -1,0 +1,21 @@
+{
+  "name": "free-game-ui-assets",
+  "owner": {
+    "name": "Free Game UI Assets"
+  },
+  "metadata": {
+    "description": "AI から無料ゲームUI素材（SVG/PNG）を検索してプロジェクトに直接保存できる Claude Code プラグイン",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "game-ui-assets",
+      "source": "./game-ui-assets",
+      "description": "「赤い決定ボタンが欲しい」と頼むだけで Free Game UI Assets を検索し SVG/PNG を保存。MCP サーバを同梱（インストールで自動登録）。全アセット CC0（商用可・帰属不要）",
+      "version": "1.0.0",
+      "category": "assets",
+      "tags": ["game-dev", "ui", "svg", "assets", "cc0"],
+      "keywords": ["game", "ui", "svg", "icon", "button", "panel", "assets", "cc0", "gamedev"]
+    }
+  ]
+}
