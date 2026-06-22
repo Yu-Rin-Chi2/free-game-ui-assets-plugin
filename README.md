@@ -1,51 +1,51 @@
 # Free Game UI Assets — Claude Code Plugin
 
-AI に「赤い決定ボタンが欲しい」「コインのアイコンを入れて」と頼むだけで、**[Free Game UI Assets](https://free-ui-assets.yurinchi2525.com)** ライブラリ（約2,100点のゲームUI向け SVG / 512px PNG）から最適な素材を検索し、プロジェクトに保存できる Claude Code プラグインです。
+Just ask your AI for "a red confirm button" or "a coin icon" and it searches the **[Free Game UI Assets](https://free-ui-assets.yurinchi2525.com)** library (~2,100 game UI SVGs / 512px PNGs), then saves the best match straight into your project.
 
-- **全アセット CC0 1.0** — 商用利用可・帰属表示不要・改変自由
-- **MCP サーバ同梱** — プラグインを入れるだけでリモート MCP が自動登録される（別途セットアップ不要）
-- **Skill 同梱** — 検索のコツ（名詞=query / 種別=type / 色=color）を内蔵し、狙った素材に確実に到達
+- **All assets are CC0 1.0** — commercial use allowed, no attribution required, free to modify
+- **MCP server bundled** — installing the plugin auto-registers the remote MCP (no separate setup)
+- **Skill bundled** — built-in search strategy (noun → query / kind → type / color → color) so you reliably land the asset you want
 
-## インストール
+## Install
 
 ```bash
-# 1. マーケットプレイスを追加
+# 1. Add the marketplace
 claude plugin marketplace add Yu-Rin-Chi2/free-game-ui-assets-plugin
 
-# 2. プラグインをインストール（MCP + Skill がまとめて入る）
+# 2. Install the plugin (MCP + Skill come together)
 claude plugin install game-ui-assets@free-game-ui-assets
 ```
 
-インストール後、MCP サーバ `game-ui-assets` が自動登録されます。`/mcp` で接続状態を確認できます。
+After installing, the MCP server `game-ui-assets` is auto-registered. Run `/mcp` to check the connection.
 
-## 使い方
+## Usage
 
-Claude にそのまま頼むだけです。
+Just ask Claude directly:
 
 ```
-コインのアイコンが欲しい。assets/ に保存して。
-青いHPゲージを探して、public/ui/ に SVG で入れて。
-木目調のパネルを3種類くらい見せて。
+I need a coin icon. Save it to assets/.
+Find a blue HP gauge and add it to public/ui/ as SVG.
+Show me a few wooden panels.
 ```
 
-Skill が自動で発動し、検索 → 候補提示 → 保存まで誘導します。
+The skill triggers automatically and walks through search → candidates → save.
 
-## 同梱物
+## What's included
 
-| 種別 | 名前 | 内容 |
-|------|------|------|
-| MCP サーバ | `game-ui-assets` | `search_assets` / `get_asset` / `download_svg` / `list_taxonomy`（Streamable HTTP） |
-| Skill | `find-game-ui-assets` | ゲームUI素材の検索・保存ワークフロー |
+| Type | Name | Contents |
+|------|------|----------|
+| MCP server | `game-ui-assets` | `search_assets` / `get_asset` / `download_svg` / `list_taxonomy` (Streamable HTTP) |
+| Skill | `find-game-ui-assets` | Search-and-save workflow for game UI assets |
 
-## 他のクライアントで使う（MCP 単体）
+## Use from other clients (MCP only)
 
-Cursor / Claude Desktop / ChatGPT など他の MCP 対応クライアントからは、以下の Remote MCP を登録すれば同じツールが使えます。
+From other MCP-capable clients (Cursor / Claude Desktop / ChatGPT, etc.), register this Remote MCP to get the same tools:
 
 ```
 https://game-ui-assets-mcp.yurinchi2525.workers.dev/mcp
 ```
 
-## ライセンス
+## License
 
-- **アセット**: CC0 1.0 Universal（パブリックドメイン相当）。商用・非商用問わず自由に利用・改変・再配布できます。
-- **このプラグイン**: [LICENSE](LICENSE)（CC0 1.0）
+- **Assets**: CC0 1.0 Universal (public domain). Free to use, modify, and redistribute for any purpose, commercial or not.
+- **This plugin**: [LICENSE](LICENSE) (CC0 1.0)

@@ -1,6 +1,6 @@
 {
   "name": "game-ui-assets",
-  "description": "Free Game UI Assets を AI から検索して SVG/PNG をプロジェクトへ直接保存。MCP サーバ同梱（インストールで自動登録）。全アセット CC0（商用可・帰属不要）",
+  "description": "Search Free Game UI Assets from your AI and save SVG/PNG straight into your project. Bundles an MCP server (auto-registered on install). All assets are CC0 (commercial use OK, no attribution).",
   "version": "1.0.0",
   "author": {
     "name": "Free Game UI Assets"
