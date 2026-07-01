@@ -61,8 +61,10 @@ If the MCP tools cannot be used for any reason, you may call the public REST API
 ```bash
 # search
 curl -s "https://game-ui-assets-api.yurinchi2525.workers.dev/assets?q=sword&type=icon&limit=10"
-# save the raw SVG
+# save the raw SVG (svg_url)
 curl -s -L -o sword.svg "https://cdn.freegameui.net/svg/icons/item/ic_item_sword-iron_01.svg"
+# save the 512px PNG (png_url) — required for noise, which is PNG-only (svg_url is null)
+curl -s -L -o ns_fractal_cloud_01.png "https://cdn.freegameui.net/png/512/noises/fractal/ns_fractal_cloud_01.png"
 ```
 
-Each response item includes `svg_url` / `png_url` / `license`.
+Each response item includes `svg_url` / `png_url` / `license`. Note: **noise assets have `svg_url: null`** — save them from `png_url`.
