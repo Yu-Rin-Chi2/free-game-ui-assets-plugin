@@ -46,6 +46,8 @@ Confirm the destination with the user (if unspecified, suggest a sensible locati
 - **SVG**: call `download_svg(name)` to get the raw SVG source (text) and write it to `{dest}/{name}.svg`.
 - **PNG (512px) if needed**: get `png_url` from `get_asset(name)` and download that URL to `{dest}/{name}.png` (e.g. `curl -L -o ...`).
 
+> **Noise textures are PNG-only** — they have no SVG (`svg_url` is `null`). Save them from `png_url` directly; do not call `download_svg` (it returns a "no SVG" error for them).
+
 When asked for multiple assets, repeat the above for each `name`.
 
 ### 4. Mention the license
